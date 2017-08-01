@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/item_assess_divider_align_top"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp">
+
+    <ImageView
+        android:id="@+id/iv_item_assess_head"
+        android:layout_width="43dp"
+        android:layout_height="43dp" />
+    <TextView
+        android:id="@+id/tv_item_assees_id"
+        android:text="小时候可俊啦"
+        android:textSize="14sp"
+        android:textColor="@color/assess_text_id"
+        android:layout_toRightOf="@+id/iv_item_assess_head"
+        android:layout_alignTop="@+id/iv_item_assess_head"
+        android:layout_marginLeft="11dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.mperfit.perfit.widget.MyRatingBar
+        android:id="@+id/mrb_item_asses_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_assees_id"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="9dp"
+        android:layout_toRightOf="@+id/iv_item_assess_head"
+        app:space_width="5dp"
+        app:star_height="11dp"
+        app:star_hollow="@drawable/lesson_star"
+        app:star_isIndicator="true"
+        app:star_max="5"
+        app:star_rating="4.2"
+        app:star_solid="@drawable/lesson_selectstar"
+        app:star_width="12dp" />
+
+    <TextView
+        android:id="@+id/tv_item_assees_date"
+        android:text="08月16日"
+        android:layout_toRightOf="@+id/mrb_item_asses_ratingbar"
+        android:layout_below="@+id/tv_item_assees_id"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:textColor="@color/text_color_gray"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_item_assees_content"
+        android:text="说点啥!!!!!!!!"
+        android:layout_below="@+id/mrb_item_asses_ratingbar"
+        android:layout_alignLeft="@+id/mrb_item_asses_ratingbar"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

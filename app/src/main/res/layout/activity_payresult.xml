@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/divider_gray"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_personal_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:paddingTop="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="购买结果"
+                android:textColor="@color/white"
+                android:textSize="@dimen/toobar_title_size" />
+
+            <TextView
+                android:id="@+id/tv_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="@dimen/x30"
+                android:gravity="center"
+                android:text="@string/wancheng"
+                android:textColor="@color/white"
+                android:textSize="@dimen/toobar_title_size" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_success"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y800"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_result_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/result_currectt" />
+
+
+        <TextView
+            android:id="@+id/tv_success_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_result_ok"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="购买成功"
+            android:textColor="@color/activity_text"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_success_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_success_text"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="40dp"
+            android:text="单人小团体精品私教课"
+            android:textColor="@color/activity_text"
+            android:textSize="15sp" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_codelist"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y318"
+            android:layout_below="@+id/tv_success_title"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp" />
+
+
+        <TextView
+            android:id="@+id/tv_to_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:text="查看详情"
+            android:textColor="@color/groupbuying_price"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_failure"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/iv_result_errorr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/result_errorr"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_errorr_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_result_errorr"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="失败"
+            android:textColor="@color/activity_text"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reg_bg"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y120"
+        android:text="用户登录"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/x34" />
+
+
+    <FrameLayout
+        android:id="@+id/fl_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_login_title"
+        android:layout_marginLeft="58dp"
+        android:layout_marginRight="58dp"
+        android:layout_marginTop="@dimen/y120">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="@dimen/y16"
+            android:background="@drawable/log_icon_user" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/met_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/please_input_yourid"
+            android:inputType="phone"
+            android:paddingLeft="40dp"
+            android:textSize="@dimen/login_textssize"
+            android:textColorHint="@color/tab_unselect_text"
+            app:met_baseColor="@color/tab_unselect_text"
+            app:met_errorColor="@color/tab_unselect_text"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="@color/text_color_gray"
+            app:met_textColor="@color/login_text_color"
+            app:met_textColorHint="@color/text_color_gray"
+            app:met_underlineColor="@color/underline_color" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_id"
+        android:layout_marginLeft="58dp"
+        android:layout_marginRight="58dp"
+        android:layout_marginTop="@dimen/y26">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="@dimen/y16"
+            android:background="@drawable/log_icon_password" />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/met_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/please_inputyourpass"
+            android:inputType="textPassword"
+            android:paddingLeft="40dp"
+            android:textSize="@dimen/login_textssize"
+            android:textColorHint="@color/tab_unselect_text"
+            app:met_baseColor="@color/tab_unselect_text"
+            app:met_primaryColor="@color/text_color_gray"
+            app:met_textColor="@color/login_text_color"
+            app:met_textColorHint="@color/text_color_gray"
+            app:met_underlineColor="@color/underline_color" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_forget_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fl_pass"
+        android:layout_marginRight="58dp"
+        android:layout_marginTop="@dimen/y30"
+        android:text="@string/forgot_pass"
+        android:textSize="@dimen/x28"
+        android:textColor="@color/underline_color" />
+
+    <FrameLayout
+        android:id="@+id/fl_weixinlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_login"
+        android:layout_marginLeft="@dimen/x114"
+        android:layout_marginRight="@dimen/x114"
+        android:layout_marginTop="@dimen/y42">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/log_icon_weixin" />
+
+        <Button
+            android:id="@+id/bt_weixin_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/log_bord"
+            android:text="@string/weixinlogin"
+            android:textColor="@color/login_text_color"
+            android:textSize="@dimen/x30" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/go_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_weixinlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x80"
+        android:drawablePadding="@dimen/x10"
+        android:drawableRight="@drawable/log_reg_icon_sj"
+        android:text="@string/go_register"
+        android:textColor="@color/login_text_color" />
+
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fl_weixinlogin"
+        android:layout_alignStart="@+id/fl_weixinlogin"
+        android:layout_below="@+id/tv_forget_pass"
+        android:layout_marginRight="@dimen/x114"
+        android:layout_marginTop="@dimen/y44"
+        android:background="@drawable/log_bord"
+        android:text="@string/logintext"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/x30" />
+
+    <FrameLayout
+        android:id="@+id/fl_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="27dp"
+        android:background="@color/transparent">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/log_icon_close" />
+    </FrameLayout>
+
+
+</RelativeLayout>

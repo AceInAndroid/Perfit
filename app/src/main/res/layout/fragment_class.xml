@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tv_class_toobar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:paddingTop="40dp">
+
+        <RelativeLayout
+            android:id="@+id/ll_button_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x80"
+            >
+
+
+            <TextView
+                android:id="@+id/bt_nearby"
+                android:layout_marginBottom="@dimen/y30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/down"
+                android:text="附近"
+                android:drawablePadding="@dimen/x15"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_toRightOf="@+id/bt_nearby"
+                android:layout_marginLeft="@dimen/x190"
+                android:id="@+id/bt_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/down"
+                android:text="课程"
+                android:drawablePadding="8dp"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_toRightOf="@+id/bt_class"
+                android:layout_marginLeft="@dimen/x190"
+                android:id="@+id/bt_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/down"
+                android:text="排序"
+                android:drawablePadding="8dp"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        android:id="@+id/swipeToLoadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.mperfit.perfit.widget.RefreshHeaderView
+            android:id="@id/swipe_refresh_header"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="80dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <com.mperfit.perfit.widget.LoadMoreFooterView
+            android:id="@id/swipe_load_more_footer"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="80dp" />
+
+
+
+
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+</LinearLayout>

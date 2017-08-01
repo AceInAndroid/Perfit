@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/fl_competition_all"
+    android:background="@color/purple_white">
+
+    <ImageView
+        android:id="@+id/tv_item_activity_imag"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y368"
+        android:scaleType="centerCrop"
+        android:transitionName="shareView" />
+
+    <TextView
+        android:id="@+id/tv_item_activity_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@drawable/green"
+        android:gravity="center"
+        android:paddingRight="@dimen/x18"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x22" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/tv_item_activity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x34"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/y60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_item_activity_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/match_icon_time"
+            android:textSize="@dimen/x26" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/match_icon_address"
+            android:id="@+id/tv_item_activity_place"
+            android:layout_width="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:maxLength="18"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x26" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</FrameLayout>

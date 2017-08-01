@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/y20"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/activity_itemdivider"
+        android:layout_height="@dimen/y10"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/y20"
+        android:layout_marginBottom="@dimen/y40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/x10"
+            android:layout_height="@dimen/y30"
+            android:background="@drawable/line_title" />
+
+        <TextView
+            style="@style/text_30_252525_nobold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:text="最新热帖" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/activity_itemdivider" />
+
+</LinearLayout>

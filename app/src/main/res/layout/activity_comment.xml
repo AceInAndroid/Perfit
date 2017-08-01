@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/view_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y122"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/x30"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总分"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/x32" />
+
+        <com.mperfit.perfit.widget.MyRatingBar
+            android:id="@+id/mrb_class_detail_ratingbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:layout_marginLeft="@dimen/x35"
+            android:layout_marginTop="@dimen/x22"
+            app:space_width="@dimen/x15"
+            app:star_height="@dimen/x50"
+            app:star_width="@dimen/x50"
+            app:star_hollow="@drawable/lesson_star"
+            app:star_isIndicator="false"
+            app:star_max="5"
+            app:star_rating="0"
+            app:star_solid="@drawable/lesson_selectstar"
+             />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_gray" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/met_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x385"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:gravity="start"
+        android:hint="感受如何，写出来和大家一起分享吧"
+        android:textSize="14sp"
+        app:met_hideUnderline="true"
+        app:met_textColorHint="@color/old_price" />
+
+    <LinearLayout
+        android:id="@+id/ll_text_caintainer"
+        android:layout_gravity="end"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_text_amount"
+            android:layout_gravity="end"
+            android:text="还差"
+            style="@style/text_20_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="15"
+            android:id="@+id/tv_text_count"
+            android:textSize="@dimen/x20"
+            android:textColor="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="个字"
+            style="@style/text_20_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/divider_gray">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/x20"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/tv_imagelist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+            <FrameLayout
+                android:layout_marginTop="@dimen/x18"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_width="@dimen/x210"
+                android:layout_height="@dimen/y210">
+                <LinearLayout
+                    android:id="@+id/ll_select_photo"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/sign"/>
+                    <TextView
+                        android:layout_marginTop="@dimen/x28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="添加图片"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

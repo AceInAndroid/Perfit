@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/y20">
+
+    <LinearLayout
+        android:id="@+id/ll_to_coursedetai"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y90"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_name"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:drawablePadding="@dimen/x10"
+            android:drawableRight="@drawable/todetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_to_order"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y180">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="@dimen/x200"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@color/activity_itemdivider"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_marginTop="@dimen/y18"
+                    style="@style/text_24_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_marginTop="@dimen/y22"
+                    style="@style/text_24_666"
+                    android:drawablePadding="@dimen/x10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_marginTop="@dimen/y26"
+                    style="@style/text_24_666"
+                    android:drawablePadding="@dimen/x10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="4"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_marginTop="@dimen/y18"
+                    android:textColor="@color/groupbuying_price"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:drawablePadding="@dimen/x10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/tv_state2"
+                    android:layout_marginTop="@dimen/y40"
+                    android:layout_gravity="center"
+                    android:textColor="@color/groupbuying_price"
+                    android:textSize="12sp"
+                    android:background="@drawable/btn_order_border"
+                    android:drawablePadding="@dimen/x10"
+                    android:layout_width="@dimen/x120"
+                    android:layout_height="@dimen/y46" />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

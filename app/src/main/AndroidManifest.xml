@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mperfit.perfit">
+    <!--允许程序设置内置sd卡的读写权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许程序获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--允许程序打开网络套接字-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许程序读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!--添加可以向外拨打电话的权限  -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--桌面图标  -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57bd209367e58e15c4000100" />
+
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="e431b19b02913681bc50d826be5ea745" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="01ac6f3ae2c3a6fd54aa24f33554f179" />
+
+
+        <activity android:name=".ui.main.activity.MainActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.perfit.main" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.article.activity.ArticleDetailActivity"
+            android:launchMode="singleTask"
+            android:process=":webview"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.activities.activity.ActivityEnroll"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|adjustPan" />
+
+        <activity
+            android:name=".ui.login.activity.LoginActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustUnspecified|adjustPan" />
+        <activity
+            android:name=".ui.login.activity.RegisterActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|adjustPan" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".ui.login.activity.ForgotPasswordActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.me.activity.ProfileActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.me.activity.AboutAsAcitivty"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.me.activity.SuggestionActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.me.activity.SettingActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.me.activity.MyJoinActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".ui.classes.activity.PayResultActivity" />
+        <activity android:name=".ui.classes.activity.SubmitOrderActivity" />
+        <activity android:name=".ui.classes.activity.ClassDetailActivity" />
+        <activity android:name=".ui.classes.activity.ConfirmOrderActivity" />
+        <activity android:name=".ui.article.activity.ArticleActivity" />
+        <activity android:name=".ui.classes.activity.ShopDetailActivity" />
+
+
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize">
+
+        </activity>
+
+
+        <activity
+            android:name=".ui.me.activity.articlecollect.ArticleCollectActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.me.activity.shop.ShopCollectActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".ui.me.activity.course.MyCourseActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.me.activity.course.OrderDetailActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.me.activity.course.RefoundActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.me.activity.course.RefoundDetaiActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.comment.activity.CommentActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.classes.activity.MapViewActivity"
+            android:process=":mapview" />
+        <activity
+            android:name=".ui.photogallery.ImagePagerActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.webview.WebViewActivity"
+            android:process=":webview"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ui.splash.GuideActivity">
+
+        </activity>
+
+        <activity android:name=".ui.photogallery.HeadShowActivity" />
+
+
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:theme="@style/LauncherTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.imagechooser.imagechooser.EntryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.perfit.album" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.imagechooser.imagechooser.crop.CropActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.perfit.crop" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.imagechooser.imagechooser.preview.AlbumImagePagerActivity"
+            android:launchMode="singleTask" />
+
+
+        <activity
+            android:name=".ui.release.activity.ReleasePreviewActivity"
+            android:process=":releasepreviewactivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".ui.otherspersonal.activity.OthersPersonalActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".ui.otherspersonal.activity.FansListActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".ui.otherspersonal.activity.FollowLitsActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".ui.comment.PostCommentDetailActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".ui.postdetailactiviy.activity.PostDetaillActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".ui.personal.activity.MySelfPersonalCenterActivity"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".ui.community.activity.HomePostPreviewActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/Transparent" />
+
+        <activity
+            android:name=".ui.rankingList.activity.StarRankingListActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".ui.rankingList.activity.ScoreboardActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".ui.personal.activity.MyContentActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.personal.activity.MyGameActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".ui.personal.activity.MyActivityActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.personal.activity.MyPointsActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".ui.competition.activity.CompetitionGameActivity"
+            android:launchMode="singleTop" />
+
+
+        <activity android:name=".ui.rankingList.activity.QuestionAnswerActivity"
+            android:launchMode="singleTop"/>
+
+        <service android:name="com.amap.api.location.APSService" />
+
+    </application>
+
+</manifest>

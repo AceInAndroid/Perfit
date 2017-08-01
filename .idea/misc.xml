@@ -43,67 +43,20 @@
   <component name="ProjectType">
     <option name="id" value="Android" />
   </component>
-  <component name="SvnBranchConfigurationManager">
-    <option name="myConfigurationMap">
-      <map>
-        <entry key="$PROJECT_DIR$/PushSDK">
-          <value>
-            <SvnBranchConfiguration>
-              <option name="branchUrls">
-                <list>
-                  <option value="svn://123.59.37.220/jyj/perfit/branches" />
-                  <option value="svn://123.59.37.220/jyj/perfit/doc" />
-                  <option value="svn://123.59.37.220/jyj/perfit/tags" />
-                </list>
-              </option>
-              <option name="trunkUrl" value="svn://123.59.37.220/jyj/perfit/trunk" />
-            </SvnBranchConfiguration>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/android-expandpoptab-library">
-          <value>
-            <SvnBranchConfiguration>
-              <option name="branchUrls">
-                <list>
-                  <option value="svn://123.59.37.220/jyj/perfit/branches" />
-                  <option value="svn://123.59.37.220/jyj/perfit/doc" />
-                  <option value="svn://123.59.37.220/jyj/perfit/tags" />
-                </list>
-              </option>
-              <option name="trunkUrl" value="svn://123.59.37.220/jyj/perfit/trunk" />
-            </SvnBranchConfiguration>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app">
-          <value>
-            <SvnBranchConfiguration>
-              <option name="branchUrls">
-                <list>
-                  <option value="svn://123.59.37.220/jyj/perfit/branches" />
-                  <option value="svn://123.59.37.220/jyj/perfit/doc" />
-                  <option value="svn://123.59.37.220/jyj/perfit/tags" />
-                </list>
-              </option>
-              <option name="trunkUrl" value="svn://123.59.37.220/jyj/perfit/trunk" />
-            </SvnBranchConfiguration>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/library">
-          <value>
-            <SvnBranchConfiguration>
-              <option name="branchUrls">
-                <list>
-                  <option value="svn://123.59.37.220/jyj/perfit/branches" />
-                  <option value="svn://123.59.37.220/jyj/perfit/doc" />
-                  <option value="svn://123.59.37.220/jyj/perfit/tags" />
-                </list>
-              </option>
-              <option name="trunkUrl" value="svn://123.59.37.220/jyj/perfit/trunk" />
-            </SvnBranchConfiguration>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="mySupportsUserInfoFilter" value="true" />
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

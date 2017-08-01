@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <uk.co.senab.photoview.PhotoView
+            android:id="@+id/iv_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:transitionName="@string/post_imagview"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/ib_sava"
+            android:layout_marginRight="@dimen/x60"
+            android:layout_marginBottom="@dimen/y90"
+            android:layout_gravity="bottom|end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/image_preview_save_image"/>
+
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

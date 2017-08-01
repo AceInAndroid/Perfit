@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/x15"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <FrameLayout
+        android:layout_width="@dimen/x350"
+        android:layout_height="wrap_content">
+    <com.mperfit.perfit.widget.SquareImageView
+        android:id="@+id/siv_imag"
+        android:layout_width="@dimen/x350"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent" />
+
+        <CheckBox
+            android:id="@+id/cb_edit"
+            android:layout_marginTop="@dimen/y10"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_gravity="right"
+            android:button="@null"
+            android:background="@drawable/checkbox_classstyle"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/y40" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_marginTop="@dimen/y20"
+        android:layout_width="@dimen/x350"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:maxLines="2"
+        android:minLines="2"
+        android:ellipsize="end"
+        android:lineSpacingExtra="6dp"
+        android:textColor="@color/activity_text"/>
+
+
+</LinearLayout>

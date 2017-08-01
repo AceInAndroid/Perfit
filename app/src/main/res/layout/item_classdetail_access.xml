@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/iv_classdetail_item_gallray"
+    android:layout_width="@dimen/x250"
+    android:layout_height="@dimen/y250"
+    android:layout_marginLeft="@dimen/x10"
+    android:scaleType="centerCrop" />

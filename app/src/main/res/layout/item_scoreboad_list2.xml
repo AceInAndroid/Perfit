@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y180"
+    android:background="@color/ranking_bg"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x34"
+        android:background="@drawable/integral_no1" />
+
+    <TextView
+        android:id="@+id/tv_ranking"
+        android:visibility="gone"
+        style="@style/text_36_202125_nobold"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_head"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/y120"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x30"
+        android:scaleType="centerCrop"
+        android:src="@drawable/personal_bg"
+        android:transitionName="head" />
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/y48"
+        android:text="joke"
+        android:textColor="@color/activity_text"
+        android:textSize="@dimen/x30" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:id="@+id/tv_liveness"
+        style="@style/text_24_333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/x30"
+        android:text="120111积分" />
+
+
+</LinearLayout>

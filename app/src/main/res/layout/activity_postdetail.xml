@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_detail_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:transitionName="shareView">
+        <include layout="@layout/view_new_toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_scroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        android:transitionGroup="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y20"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginTop="@dimen/y30"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="@dimen/x60"
+                    android:layout_height="@dimen/y60"
+                    android:scaleType="centerCrop"
+                    app:civ_border_color="@color/gray"
+                    app:civ_border_width="1px" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/tab_unselect_text"
+                        android:textSize="@dimen/x24"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/home_list_time"
+                        android:textSize="@dimen/x20" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivFeedCenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:transitionName="@string/post_imagview"
+                    />
+
+                <com.mperfit.perfit.widget.LoadingView
+                    android:id="@+id/lv_loading"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:loadingsrc="@drawable/image_loading"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginRight="@dimen/x15"
+                android:layout_marginTop="@dimen/x30"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/y10"
+                android:maxLines="2"
+                android:textColor="@color/home_list_indication_color"
+                android:textSize="@dimen/x28" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="@dimen/x30">
+
+                <ImageButton
+                    android:id="@+id/btnLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_list_heart"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_heart_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:textColor="@color/home_list_heart_color"
+                    android:textSize="@dimen/x28" />
+
+                <ImageButton
+                    android:id="@+id/btnComments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x45"
+                    android:background="@drawable/btn_feed_action"
+                    android:src="@drawable/home_list_item_news" />
+
+                <TextView
+                    android:id="@+id/tv_conmment_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:textColor="@color/home_list_heart_color"
+                    android:textSize="@dimen/x28" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/btnMore"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_feed_action"
+                    android:src="@drawable/home_list_share" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x10"
+                android:background="@color/divider_gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y30"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/x5"
+                    android:layout_height="@dimen/y30"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:background="@color/black" />
+
+                <TextView
+                    style="@style/text_28_202125"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:text="最新评论" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/y30"
+                android:background="@color/divider_gray" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginRight="@dimen/x15" />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

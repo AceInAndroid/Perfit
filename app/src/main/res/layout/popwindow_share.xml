@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_sharetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y50"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@color/share_popwindos_color"
+            android:textSize="@dimen/x34"
+            android:textStyle="bold" />
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sharetext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y70"
+            android:layout_marginBottom="@dimen/y70"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ib_weixin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v_topdivider"
+                android:layout_marginLeft="@dimen/x100"
+                android:background="@drawable/share_btn_weixin" />
+
+            <ImageButton
+                android:id="@+id/weixin_quan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v_topdivider"
+                android:layout_marginLeft="@dimen/x90"
+                android:layout_toRightOf="@+id/ib_weixin"
+                android:background="@drawable/share_btn_quan" />
+
+            <ImageButton
+                android:id="@+id/ib_weibo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x90"
+                android:background="@drawable/share_btn_weibo" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/ll_delete_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y70">
+            <ImageButton
+                android:id="@+id/iv_delete"
+                android:layout_marginLeft="@dimen/x100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/share_btn_delete"/>
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98"
+            android:background="@color/divider_gray"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textStyle="bold"
+            android:textColor="@color/share_popwindos_color" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

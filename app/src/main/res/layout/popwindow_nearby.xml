@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popwindow_bg"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/popwindow_bg">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_nearby_list"
+            android:layout_width="@dimen/x200"
+            android:layout_height="wrap_content"
+            android:background="@color/popwindow_bg_blac_deep" />
+
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>

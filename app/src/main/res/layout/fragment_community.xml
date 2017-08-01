@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100">
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/ctl_titlebar"
+            android:layout_width="@dimen/x350"
+            android:layout_height="@dimen/y100"
+            android:layout_gravity="center"
+            app:tl_indicator_color="@color/groupbuying_price"
+            app:tl_indicator_height="@dimen/y3"
+            app:tl_indicator_margin_bottom="@dimen/x20"
+            app:tl_indicator_width="@dimen/x100"
+            app:tl_textBold="SELECT"
+            app:tl_textSelectColor="@color/groupbuying_price"
+            app:tl_textUnselectColor="@color/black"
+            app:tl_textsize="@dimen/x30" />
+
+        <ImageButton
+            android:layout_gravity="end|center_vertical"
+            android:id="@+id/ib_qa"
+            android:visibility="gone"
+            android:background="@drawable/explain"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

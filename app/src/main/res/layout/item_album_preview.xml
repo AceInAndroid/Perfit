@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fl_container">
+
+    <com.mperfit.perfit.ui.photogallery.PinchImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/iv_image">
+    </com.mperfit.perfit.ui.photogallery.PinchImageView>
+    <ImageButton
+        android:id="@+id/ib_cancel"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_gravity="end"
+        android:background="@drawable/preview_sellect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

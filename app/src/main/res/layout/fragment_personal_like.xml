@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        android:id="@+id/swipeToLoadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:horizontalSpacing="@dimen/x12"
+            android:numColumns="3"
+            android:verticalSpacing="@dimen/x12">
+
+        </GridView>
+
+        <com.mperfit.perfit.widget.LoadMoreFooterView
+            android:id="@+id/swipe_load_more_footer"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center" />
+
+
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+
+</LinearLayout>

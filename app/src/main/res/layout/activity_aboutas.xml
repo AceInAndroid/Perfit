@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:background="@drawable/about_logo"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:text="@string/aboutperfit_zeropart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:lineSpacingExtra="6dp"
+        android:text="@string/aboutperfit_onepart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:lineSpacingExtra="6dp"
+        android:text="@string/aboutperfit_secondpart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:lineSpacingExtra="6dp"
+        android:text="@string/aboutperfit_thirdpart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:lineSpacingExtra="6dp"
+        android:text="@string/aboutperfit_lastpart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider_gray"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/view_toolbar"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/divider_gray">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:civ_border_width="1px"
+            app:civ_border_color="@color/gray"/>
+
+        <LinearLayout
+            android:id="@+id/ll_head"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/profile_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/profile_page_text_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="更换头像" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/profile_bg">
+
+        <TextView
+            style="@style/profile_page_text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/met_name"
+            style="@style/profile_page_text_met"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:hint="@string/inputyourid"
+            android:maxLines="1"
+            android:textColorHint="@color/hint_color"
+            app:met_hideUnderline="true"
+            app:met_textColor="@color/hint_color" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_select_sex"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/profile_bg">
+
+        <TextView
+            style="@style/profile_page_text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别" />
+
+        <TextView
+            android:id="@+id/tv_select_sex"
+            style="@style/profile_page_text_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请选择您的性别" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_select_birth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/profile_bg">
+
+        <TextView
+            style="@style/profile_page_text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出生年月" />
+
+        <TextView
+            android:id="@+id/tv_select_date"
+            style="@style/profile_page_text_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请选择您的生日" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/profile_bg">
+
+        <TextView
+            style="@style/profile_page_text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="职业" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/met_work"
+            style="@style/profile_page_text_met"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:hint="请输入您的职业"
+            android:maxLines="1"
+            app:met_hideUnderline="true"
+            app:met_textColor="@color/hint_color"
+            app:met_textColorHint="@color/hint_color" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_select_emotionstate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/profile_bg">
+
+        <TextView
+            style="@style/profile_page_text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="情感状态" />
+
+        <TextView
+            android:id="@+id/tv_select_single"
+            style="@style/profile_page_text_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请选择您的感情状态" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/profile_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="8dp"
+            android:paddingTop="8dp"
+            android:text="个性签名"
+            android:textColor="@color/activity_text"
+            android:textSize="13sp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/met_more"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="start"
+            android:hint="请输入您的个性签名(不超过60个字)"
+            android:textSize="13sp"
+            app:met_hideUnderline="true"
+            app:met_textColor="@color/hint_color"
+            app:met_textColorHint="@color/hint_color" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+

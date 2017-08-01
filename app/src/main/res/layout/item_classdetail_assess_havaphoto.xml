@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="@dimen/item_assess_divider_align_top">
+
+    <TextView
+        android:id="@+id/tv_item_assees_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_item_assess_head"
+        android:layout_marginLeft="11dp"
+        android:layout_toRightOf="@+id/iv_item_assess_head"
+        android:textColor="@color/assess_text_id"
+        android:textSize="14sp" />
+
+    <com.mperfit.perfit.widget.MyRatingBar
+        android:id="@+id/mrb_item_asses_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_assees_id"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="9dp"
+        android:layout_toRightOf="@+id/iv_item_assess_head"
+        app:space_width="2dp"
+        app:star_height="11dp"
+        app:star_hollow="@drawable/lesson_star"
+        app:star_isIndicator="true"
+        app:star_max="5"
+        app:star_rating="4.2"
+        app:star_solid="@drawable/lesson_selectstar"
+        app:star_width="12dp" />
+
+    <TextView
+        android:id="@+id/tv_item_assees_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_assees_id"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/mrb_item_asses_ratingbar"
+        android:textColor="@color/text_color_gray"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_item_assees_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/x6"
+        android:layout_alignLeft="@+id/mrb_item_asses_ratingbar"
+        android:layout_below="@+id/mrb_item_asses_ratingbar"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp" />
+
+    <GridView
+        android:id="@+id/gv_item_sssess_photo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x190"
+        android:layout_alignLeft="@+id/tv_item_assees_content"
+        android:layout_below="@+id/tv_item_assees_content"
+        android:layout_marginTop="10dp"
+        android:horizontalSpacing="@dimen/x10"
+        android:columnWidth="@dimen/x170"
+        android:cacheColorHint="#00000000"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_item_assess_head"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop" />
+
+
+</RelativeLayout>

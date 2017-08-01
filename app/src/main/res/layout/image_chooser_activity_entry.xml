@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/mTitle"
+        layout="@layout/image_chooser_default_title" />
+
+    <RelativeLayout
+        android:id="@+id/mEntry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mTitle">
+
+    </RelativeLayout>
+
+</RelativeLayout>

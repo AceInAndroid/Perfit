@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tool_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y88"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/fl_back"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageButton
+
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/my_btn_back_black" />
+    </FrameLayout>
+
+
+    <TextView
+        android:paddingRight="@dimen/x15"
+        android:layout_centerInParent="true"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/toolbar_text__color"
+        android:textSize="@dimen/toobar_title_size" />
+
+        <TextView
+            android:layout_alignTop="@+id/tv_title"
+            android:id="@+id/tv_right_text"
+            android:textSize="@dimen/toobar_title_size"
+            android:textColor="@color/toolbar_text__color"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

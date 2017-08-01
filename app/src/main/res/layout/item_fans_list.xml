@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y140">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_head"
+        android:layout_width="@dimen/x80"
+        android:layout_height="@dimen/y80"
+        android:layout_marginLeft="@dimen/x30"
+        android:scaleType="centerCrop"
+        android:src="@drawable/personal_bg"
+        android:layout_gravity="center"
+        android:transitionName="head"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:text="奥巴马"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x30"
+        style="@style/text_28_202125"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <FrameLayout
+        android:id="@+id/fl_follow_container"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x15"
+        >
+
+        <ImageButton
+            android:id="@+id/ib_follow_bg"
+            android:layout_width="@dimen/x148"
+            android:layout_height="@dimen/y50"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_bg_follow"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_follow_icon"
+            android:id="@+id/tv_follow_text"
+            android:layout_gravity="center_vertical|end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关注"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_marginRight="@dimen/x34"
+            android:textColor="@color/groupbuying_price"
+            android:textSize="@dimen/x24" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_follow_icon"
+            android:layout_marginLeft="@dimen/x28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:background="@drawable/my_icon_add" />
+
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

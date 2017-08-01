@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/view_new_toolbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/groupbuying_price"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_enrollinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/bclock" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/enroll_time" />
+
+                    <TextView
+                        android:id="@+id/tv_enroll_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/bmoney" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/enroll_tickes" />
+
+                    <TextView
+                        android:id="@+id/tv_enroll_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/activity_hotprice_text" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/bpeople" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/enroll_joyed" />
+
+
+                    <TextView
+                        android:id="@+id/tv_enroll_joyed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/groupbuying_price"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_enroll_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color_gray" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/location" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/enroll_place" />
+
+                    <TextView
+                        android:id="@+id/tv_enroll_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_below="@+id/ll_enrollinfo"
+                android:orientation="vertical"
+                android:id="@+id/ll_enroll_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_enroll_info_title"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/ll_enrollinfo"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/enroll_enroll"
+                android:textColor="@color/groupbuying_price"
+                android:textSize="18sp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/met_enroll_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_enroll_info_title"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/enrollinfo_bg"
+                android:hint="@string/enroll_name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textSize="14sp"
+                app:met_hideUnderline="true" />
+
+            <LinearLayout
+                android:id="@+id/ll_enroll_sex"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/met_enroll_name"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/enrollinfo_bg"
+                android:padding="8dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/bt_selectsex"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@android:color/transparent" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/met_enroll_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/enrollinfo_bg"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="@string/enroll_sex"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="14sp"
+                        app:met_hideUnderline="true" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/met_enroll_age"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ll_enroll_sex"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/enrollinfo_bg"
+                android:hint="@string/enroll_age"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textSize="14sp"
+                app:met_hideUnderline="true" />
+
+            <LinearLayout
+                android:id="@+id/ll_phone_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/met_enroll_age"
+                android:orientation="horizontal">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/met_enroll_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/enrollinfo_bg"
+                    android:hint="@string/enroll_phone"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:paddingLeft="8dp"
+                    android:textSize="14sp"
+                    app:met_floatingLabelTextSize="8sp"
+                    app:met_hideUnderline="true"
+                    />
+
+
+                <com.mperfit.perfit.widget.CountDownButton
+                    android:id="@+id/cdb_register_timer"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/count_down_bg"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="@string/getinvailidatacode"
+                    android:enabled="false"
+                    android:textAllCaps="false"
+                    android:textColor="@color/old_price"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/met_enroll_identify_code"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ll_phone_container"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/enrollinfo_bg"
+                android:hint="@string/code_text"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textSize="14sp"
+                app:met_hideUnderline="true" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/met_enroll_more"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/met_enroll_identify_code"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/enrollinfo_bg"
+                android:gravity="start"
+                android:hint="@string/beizhu_60"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textSize="14sp"
+                app:met_hideUnderline="true"
+                app:met_maxCharacters="60" />
+            <View
+                android:layout_below="@+id/met_enroll_more"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x100"
+                />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+        <Button
+            android:id="@+id/bt_enroll_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/groupbuying_price"
+            android:text="@string/confirm_text"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

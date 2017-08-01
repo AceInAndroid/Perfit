@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reg_bg"
+    android:orientation="vertical"
+    android:paddingTop="25dp">
+
+
+
+    <FrameLayout
+        android:id="@+id/fl_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/log_icon_close" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y124"
+        android:text="找回密码"
+        android:textColor="@color/login_text_color"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_signup"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="58dp"
+            android:layout_marginRight="58dp"
+            android:layout_marginTop="65dp">
+
+            <ImageView
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/reg_icon_iphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/met_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/register_input_phonecode"
+                android:inputType="phone"
+                android:paddingLeft="40dp"
+                app:met_underlineColor="@color/text_color_gray"
+                android:textSize="@dimen/login_textssize"
+                app:met_baseColor="@color/login_text_color"
+                app:met_textColor="@color/login_text_color"
+                app:met_textColorHint="@color/text_color_gray" />
+
+            <com.mperfit.perfit.widget.CountDownButton
+                android:id="@+id/cdb_register_timer"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:background="@drawable/count_down_bg"
+                android:enabled="false"
+                android:textSize="12sp"
+                android:textColor="@color/text_color_gray" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_phonecode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="58dp"
+            android:layout_marginRight="58dp"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/reg_icon_shield"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/met_vailidate_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_underlineColor="@color/text_color_gray"
+                android:hint="@string/vailidate_code"
+                android:inputType="number"
+                android:paddingLeft="40dp"
+                android:textSize="@dimen/login_textssize"
+                app:met_baseColor="@color/login_text_color"
+                app:met_textColor="@color/login_text_color"
+                app:met_textColorHint="@color/text_color_gray" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="58dp"
+            android:layout_marginRight="58dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/reg_icon_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/met_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_underlineColor="@color/text_color_gray"
+                android:hint="@string/regist_password"
+                android:inputType="textPassword"
+                android:paddingLeft="40dp"
+                android:textSize="@dimen/login_textssize"
+                app:met_baseColor="@color/login_text_color"
+                app:met_errorColor="@color/colorPrimary"
+                app:met_textColor="@color/login_text_color"
+                app:met_textColorHint="@color/text_color_gray" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/bt_regist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="58dp"
+            android:layout_marginRight="58dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/log_bord"
+            android:text="@string/confirm_btn"
+            android:textColor="@color/login_text_color" />
+    </LinearLayout>
+
+</RelativeLayout>

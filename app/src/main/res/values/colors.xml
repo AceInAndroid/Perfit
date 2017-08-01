@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#202125</color>
+    <color name="colorPrimaryDark">#202125</color>
+    <color name="colorAccent">#d2bcc3</color>
+    <color name="tab_bgcolor">#373936</color>
+    <color name="tab_article_textcolor">#999</color>
+    <color name="purple_white">#fff</color>
+    <color name="photo_previewbg">#f4f4f4</color>
+    <color name="white">#fff</color>
+    <color name="white_70traslation">#b8ffffff</color>
+    <color name="fab_bg">#c66666</color>
+    <color name="news_read">#736565</color>
+    <color name="news_unread">#0a0909</color>
+    <color name="colorCard">#f7f6f7</color>
+    <color name="colorText">#0a0909</color>
+    <color name="black2">#121111</color>
+    <color name="black_bg">#000</color>
+    <color name="popwindow_bg">#60000000</color>
+    <color name="popwindow_bg_blac">#90000000</color>
+    <color name="popwindow_bg_blac_deep">#90202125</color>
+    <color name="home_course_backgroud">#41000000</color>
+
+
+    <color name="text_color_gray">#666</color>
+    <color name="e">#eee</color>
+    <color name="text_black">#252525</color>
+    <color name="assess_text_id">#32699b</color>
+    <color name="activity_text">#333333</color>
+    <color name="activity_date_text">#9e9e9e</color>
+    <color name="six_text">#666</color>
+    <color name="tab_unselect_textc">#666</color>
+    <color name="activity_oldprice_text">#9e9e9e</color>
+    <color name="activity_hotprice_text">#ec2121</color>
+    <color name="activity_itemdivider">#f4f4f4</color>
+    <color name="old_price">#999</color>
+    <color name="old_price_soft">#bebebe</color>
+    <color name="old_price_minus">#707070</color>
+    <color name="tab_indicator_color">#fff</color>
+    <color name="tab_select_color">#20b3a4</color>
+    <color name="personal_bg_color">#e64e4e4e</color>
+    <color name="hint_color">#d2d2d2</color>
+    <color name="class_item_dis_text">#ccc</color>
+    <color name="class_buy_bg">#a3ffffff</color>
+    <color name="no_internet">#aaa</color>
+    <color name="half_black_bg">#27000000</color>
+    <color name="half_black_bg2">#8b000000</color>
+    <color name="half_black_bg3">#75000000</color>
+    <color name="default_photo_bg">#ccc</color>
+    <!--主题色-->
+    <color name="groupbuying_price">#20b3a4</color>
+
+    <color name="half_backgroundclor">#50000000</color>>
+    <color name="backgroundclor_tweety_persent">#32000000</color>>
+    <color name="backgroundclor_seventy_persent">#b1000000</color>>
+    <color name="backgroundclor_soon">#797a7b</color>>
+
+    <color name="venue_color1">#eca330</color>
+    <color name="venue_color2">#6fae73</color>
+    <color name="venue_color3">#85d0c9</color>
+    <color name="venue_color4">#a874b8</color>
+
+    <!--LG-->
+    <color name="pop_bg">#4c000000</color>
+    <color name="table_list">#E4EBF5</color>
+    <color name="text_color_dark_gey">#8e8e8e</color>
+    <color name="teach_blue">#4dd0e2</color>
+    <color name="teach_red">#ff9aa0</color>
+    <color name="teach_green">#97d055</color>
+    <color name="teach_purple">#ce93d8</color>
+    <color name="teach_yellow">#ffc108</color>
+    <color name="button_blue">#5ed7ec</color>
+    <color name="button_gey">#e0e0e0</color>
+    <color name="table_gey">#cecece</color>
+    <color name="text_color_light_blue">#5ed7ec</color>
+    <color name="text_color_black_button">#cacaca</color>
+    <color name="text_color_red">#f96868</color>
+    <color name="text_color_gold">#ffa800</color>
+    <color name="item_color_location_caps">#E6E6E6</color>
+    <color name="text_color_down">#e5e5e5</color>
+    <color name="text_color_blue">#0087e0</color>
+    <color name="text_color_gey">#676767</color>
+    <color name="text_color_gey_white">#c6c6c6</color>
+    <color name="text_color_black">#1F1F1F</color>
+    <color name="text_color_yellow">#ffa800</color>
+    <color name="shape_circle_stroke">#E0E0E0</color>
+    <color name="main_title_blue">#0087E0</color>
+    <color name="bg">#F5F5F5</color>
+    <color name="home_recommend">#1F1F1F</color>
+    <color name="base_text_press_color">#F5F5F5</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <!--LG-->
+    <color name="transparent">#00000000</color>
+    <color name="transparent_lg">#4c000000</color>
+    <color name="gray">#999999</color>
+    <color name="blue">#00a5ec</color>
+    <color name="red">#ff3b30</color>
+    <color name="green">#4dd363</color>
+    <color name="oval_no">#ededed</color>
+    <color name="oval_yes">#cdcdcd</color>
+
+
+    <color name="trans">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+    <!--LuYang-->
+    <color name="group_item_bg">#F3F3F3</color>
+    <color name="group_item_pressed_bg">#E5E5E5</color>
+    <color name="child_item_bg">#E5E5E5</color>
+    <color name="child_item_diveder">#D6D6D5</color>
+    <color name="list_item_text_pressed_bg">#FF822E</color>
+    <color name="tab_text_color">#787878</color>
+    <color name="tab_text_pressed_color">#CD0000</color>
+    <color name="main_color">#0087e0</color>
+    <color name="text_black1">#2f2f2f</color>
+    <color name="line">#e0e0e0</color>
+    <color name="phone_code">#aaaaaa</color>
+    <!--LuYang-->
+
+    <color name="card_bg">#EBEBEB</color>
+
+
+    <color name="theme_bg">#FFFFFFFF</color>
+    <color name="theme_divider_color">#FFDDDDDD</color>
+    <color name="theme_focus">#FFFF8800</color>
+
+    <color name="test">#FF25c2e6</color>
+
+    <color name="backIconColor">#FFFFFFFF</color>
+
+
+    <!--2.3版本的颜色-->
+
+    <color name="tab_unselect_text">#202125</color>
+    <color name="home_list_time">#999999</color>
+    <color name="home_list_heart_color">#cbcbcb</color>
+    <color name="home_list_indication_color">#202125</color>
+    <color name="toolbar_text__color">#202125</color>
+    <color name="release_text__color">#202125</color>
+    <color name="login_text_color">#202125</color>
+    <color name="postcomment_text__color">#333333</color>
+    <color name="divider_gray">#f4f4f4</color>
+    <color name="underline_color">#666666</color>
+    <color name="share_popwindos_color">#999</color>
+    <color name="new_personal_bg_color">#1c000000</color>
+
+    <!--2.4版本颜色-->
+    <color name="ranking_num1_bg">#ffad01</color>
+    <color name="ranking_num2_bg">#7d7c9e</color>
+    <color name="ranking_num3_bg">#999999</color>
+    <color name="ranking_bg">#f9f9f9</color>
+    <color name="star_ranking_tab_divider">#c7c7c7</color>
+
+
+
+
+
+
+
+</resources>

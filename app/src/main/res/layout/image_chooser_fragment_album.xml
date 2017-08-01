@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="@dimen/x15"
+            android:verticalSpacing="@dimen/x15"
+            android:background="@color/photo_previewbg"
+            android:numColumns="3"
+            android:id="@+id/mAlbum">
+        </GridView>
+
+        <LinearLayout
+            android:id="@+id/ll_preview"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:layout_height="@dimen/y120">
+            <Button
+                android:id="@+id/btn_preview"
+                android:gravity="center"
+                android:text="预览"
+                android:textSize="@dimen/x30"
+                android:textColor="@color/activity_text"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/x155"
+                android:layout_height="@dimen/y66"
+                android:background="@drawable/btn_photo_preview"/>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/half_backgroundclor"
+        android:visibility="gone"
+        android:id="@+id/mCover" />
+</RelativeLayout>

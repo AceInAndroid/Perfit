@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/rl_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginTop="@dimen/y19"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/x26"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="@dimen/x330"
+            android:layout_height="@dimen/y216"
+            android:scaleType="centerCrop"
+            />
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/x24"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/y6"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x26" />
+
+        <TextView
+            android:id="@+id/tv_data"
+            android:layout_weight="1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y30"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/activity_date_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:layout_weight="1"
+
+                android:layout_marginTop="@dimen/x20"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:gravity="center"
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="@dimen/y46"
+                    android:maxLines="1"
+                    android:background="@drawable/btn_myjoin_bg"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+                <CheckBox
+                    android:id="@+id/cb_collect"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30"
+                    android:checked="true"
+                    android:background="@drawable/select_shopcollect"
+                    android:button="@null" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

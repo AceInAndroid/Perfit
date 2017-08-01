@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/view_toolbar"/>
+
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </com.amap.api.maps2d.MapView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x240">
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/x30"
+                android:layout_marginLeft="@dimen/x15"
+                android:id="@+id/tv_shopname"
+                style="@style/text_28_252525"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/x15"
+                android:id="@+id/tv_address"
+                style="@style/text_24_666"
+                android:layout_marginTop="@dimen/x15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="bold"
+                android:text="营业时间"
+                android:layout_marginTop="@dimen/x20"
+                android:layout_marginLeft="@dimen/x15"
+                android:id="@+id/tv_shop_bis_hours"
+                style="@style/text_28_252525"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/x15"
+                android:id="@+id/tv_bis_time"
+                style="@style/text_24_666"
+                android:layout_marginTop="@dimen/x15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

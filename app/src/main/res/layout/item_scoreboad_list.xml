@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y120"
+    android:background="@color/white"
+    android:id="@+id/ll_all"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_medal"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x34"
+        android:background="@drawable/integral_no1" />
+
+    <TextView
+        android:id="@+id/tv_ranking"
+        style="@style/text_30_252525_nobold"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x38"
+        android:layout_marginRight="@dimen/x14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_head"
+        android:layout_width="@dimen/x90"
+        android:layout_height="@dimen/y90"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x30"
+        android:scaleType="centerCrop"
+        android:transitionName="head" />
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/activity_text"
+        android:textSize="@dimen/x26" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:id="@+id/tv_liveness"
+        style="@style/text_24_333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/x30"
+         />
+
+
+</LinearLayout>

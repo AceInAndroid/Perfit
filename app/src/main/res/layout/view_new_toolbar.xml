@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tb_detail_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y88"
+    android:background="@color/white"
+    app:layout_collapseMode="pin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:layout_centerVertical="true"
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_btn_back_black" />
+
+        <TextView
+            android:id="@+id/tv_tb_title"
+            android:paddingRight="@dimen/x20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/release_text__color"
+            android:textSize="@dimen/x30" />
+
+        <ImageButton
+            android:id="@+id/ib_qa"
+            android:visibility="gone"
+            android:background="@drawable/explain"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="joyin">报名参加</string>
+    <string name="theme">【活动主题】</string>
+    <string name="freeof">免费</string>
+    <string name="confirm_text">确认提交</string>
+</resources>

@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/add"
+        android:title="活动"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/add_friend"
+        android:title="文章"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/scace"
+        android:title="扫一扫"
+        app:showAsAction="never" />
+</menu>

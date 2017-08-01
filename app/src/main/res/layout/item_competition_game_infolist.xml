@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_game_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/y20"
+    android:minHeight="@dimen/y350">
+
+    <FrameLayout
+        android:id="@+id/fl_image_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/tv_item_activity_imag"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y350"
+            android:scaleType="centerCrop"
+            android:src="@drawable/login_bg"
+            app:riv_corner_radius="@dimen/x10" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_game_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/y52"
+            android:text="奥林匹克公园"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x34" />
+
+        <TextView
+            android:id="@+id/tv_game_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y20"
+            android:drawableLeft="@drawable/match_icon_time"
+            android:drawablePadding="@dimen/x15"
+            android:text="3月15日"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x24" />
+
+
+        <TextView
+            android:id="@+id/tv_game_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y20"
+            android:drawableLeft="@drawable/match_icon_address"
+            android:drawablePadding="@dimen/x15"
+            android:ellipsize="end"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:text="奥林匹克公园奥林匹克公园奥林匹克公园"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x24" />
+
+        <FrameLayout
+            android:id="@+id/fl_state_container"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/y30"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_game_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_mygame_state_bg"
+            android:paddingLeft="@dimen/x25"
+            android:paddingRight="@dimen/x25"
+            android:paddingTop="@dimen/y10"
+            android:paddingBottom="@dimen/y10"
+            android:text="正在进行"
+            android:textColor="@color/groupbuying_price"
+            android:textSize="@dimen/x24" />
+
+        </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</FrameLayout>
